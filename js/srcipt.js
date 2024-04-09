@@ -4,7 +4,7 @@ var tl = gsap.timeline({
         start: '0% 50%',
         end: '50% 70%',
         scrub:2,
-        markers:true,
+        // markers:true,
         duration:2,
         
     }
@@ -13,5 +13,21 @@ var tl = gsap.timeline({
 tl.to('#box1',{
     top:'160%',
     left:'9%',
+    duration:1
+})
+var t2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.three',
+        start: '0% 50%',
+        end: '50% 70%',
+        scrub:2,
+        markers:true,
+        duration:2,
+        
+    }
+})
+t2.to('#box1',{
+    top:'250%',
+    left:'50%',
     duration:1
 })
