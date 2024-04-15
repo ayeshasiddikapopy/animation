@@ -48,7 +48,46 @@ a{
 model-viewer {
     width: 200px; /* Make the model fill its container */
     height: 400px; /* Make the model fill its container */
-    
-   
-
   }
+  .four {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  .four img {
+    width: 300px;
+    height: 200px;
+  }
+  .object {
+    position: absolute;
+    top: 0;
+  }
+  .igm1{
+    top: 0;
+    left: 10%;
+  }
+  .igm3{
+    top: 30%;
+    left: 30%;
+  }
+  .igm2{
+    top: 50%;
+    left: 0%;
+  }
+  .igm4{
+    top: 50%;
+    left: 60%;
+  }
+  .cursor{
+    position: absolute;
+    margin: 0 auto;
+    pointer-events: none;
+    border-radius: 50%;
+    transform:translate(-50%, -50%);
+    transition:all .3s ease;
+    transition-property: background,transform;
+    transform-origin: 100% 100%; 
+    z-index: 999;
+ }
+ 

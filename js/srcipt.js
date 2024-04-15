@@ -49,3 +49,36 @@ let handleResize= () => {
   handleResize();
 
   window.addEventListener('resize', handleResize);
+
+
+  // -----------
+  // let cursor = document.querySelector('.cursor')
+  // let object = document.querySelector('.object')
+  // document.addEventListener('mousemove', paralax)
+
+  // function paralax(e) {
+
+  //   cursor.style.top = (e.clientX + 'px') 
+  //   cursor.style.left = (e.clientY + 'px') 
+    
+
+  //   object.forEach(function(move){
+
+  //     let moving = move.getAttribute(`${data-value}`);
+  //     let x =( e.clientX + moving ) / 250
+  //     let y =( e.clientY + moving ) / 250
+
+  //     move.style.transform = `${translateX("+ x + ") translateY(" + y + )}`
+  //   })
+  //   console.log( e.clientX )
+  // }
+  let mouse =document.querySelector(".cursor");
+
+ 
+ window.addEventListener('mousemove',cursor);
+
+ function cursor(e){
+     mouse.style.top = e.clientY + "px";
+     mouse.style.left = e.clientX + "px";
+ }
+ 
